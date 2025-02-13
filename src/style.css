@@ -70,6 +70,9 @@ h1 {
   .bottom .change-font-size{
     font-size: 13px;
   }
+  .top .change-font-size-temp {
+    font-size: 6rem;
+  }
 }
 
 /* From UIverse */

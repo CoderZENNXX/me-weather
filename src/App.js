@@ -59,7 +59,7 @@ function App() {
           </div>
 
           <div className="temp">
-            <h1>{data?.main?.temp ? `${data.main.temp.toFixed(1)}°C` : "-°C"}</h1>
+            <h1 className="change-font-size-temp">{data?.main?.temp ? `${data.main.temp.toFixed(1)}°C` : "-°C"}</h1>
           </div>
         </div>
 
