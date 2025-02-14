@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/me-weather/static/css/main.8cb350a5.css",
+    "main.js": "/me-weather/static/js/main.86fed07a.js",
+    "static/js/488.2416ff14.chunk.js": "/me-weather/static/js/488.2416ff14.chunk.js",
+    "static/media/me-weather-background-image.jpg": "/me-weather/static/media/me-weather-background-image.54f51812a91f77b21619.jpg",
+    "index.html": "/me-weather/index.html",
+    "main.8cb350a5.css.map": "/me-weather/static/css/main.8cb350a5.css.map",
+    "main.86fed07a.js.map": "/me-weather/static/js/main.86fed07a.js.map",
+    "488.2416ff14.chunk.js.map": "/me-weather/static/js/488.2416ff14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cb350a5.css",
+    "static/js/main.86fed07a.js"
+  ]
+}
