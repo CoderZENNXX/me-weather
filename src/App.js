@@ -64,26 +64,41 @@ function App() {
         </div>
 
         <div className="bottom">
-          <div className="feels-like">
-            <p className="change-font-size">
-              {data?.main?.feels_like ? `${data.main.feels_like.toFixed(1)}°C` : "-°C"}
-            </p>
-            <p className="change-font-size">Feels Like</p>
+          <div className="bottom-top">
+            <div className="feels-like">
+              <p className="change-font-size">
+                {data?.main?.feels_like ? `${data.main.feels_like.toFixed(1)}°C` : "-°C"}
+              </p>
+              <p className="change-font-size">Feels Like</p>
+            </div>
+
+            <div className="humidity">
+              <p className="change-font-size">
+                {data?.main?.humidity ? `${data.main.humidity.toFixed(1)}%` : "-%"}
+              </p>
+              <p className="change-font-size">Humidity</p>
+            </div>
+
+            <div className="wind-speed">
+              <p className="change-font-size">
+                {data?.wind?.speed ? `${data.wind.speed.toFixed(1)} MPS` : "- MPS"}
+              </p>
+              <p className="change-font-size">Wind Speed</p>
+            </div>
           </div>
 
-          <div className="humidity">
-            <p className="change-font-size">
-              {data?.main?.humidity ? `${data.main.humidity.toFixed(1)}%` : "-%"}
-            </p>
-            <p className="change-font-size">Humidity</p>
-          </div>
+          <div className="bottom-bottom">
+            <div className="pressure">
+              <p className="change-font-size">{data?.main?.pressure ? `${data?.main?.pressure} hPa` : "-hPa"} </p>
+              <p className="change-font-size">Pressure</p>
+            </div>
 
-          <div className="wind-speed">
-            <p className="change-font-size">
-              {data?.wind?.speed ? `${data.wind.speed.toFixed(1)} MPS` : "- MPS"}
-            </p>
-            <p className="change-font-size">Wind Speed</p>
+            <div className="visibility">
+              <p className="change-font-size">{data?.visibility ? `${(data?.visibility / 1000).toFixed(1)} KM` : "-KM"}</p>
+              <p className="change-font-size">Visibility</p>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>

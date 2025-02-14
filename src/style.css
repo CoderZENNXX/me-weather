@@ -17,7 +17,7 @@ p {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .app {
@@ -53,6 +53,7 @@ h1 {
 
 .bottom {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -66,12 +67,35 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+.bottom-top, .bottom-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
   .bottom .change-font-size{
     font-size: 13px;
   }
   .top .change-font-size-temp {
-    font-size: 6rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .top .change-font-size-temp {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .bottom .change-font-size{
+    font-size: 10px;
+  }
+  .top .change-font-size-temp {
+    font-size: 2rem;
   }
 }
 
@@ -79,7 +103,6 @@ h1 {
 .inputbox {
   position: relative;
   width: 200px;
-  margin-bottom: 30px;
 }
 
 .inputbox input {
