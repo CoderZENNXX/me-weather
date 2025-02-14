@@ -22,6 +22,8 @@ function App() {
 
   return (
     <div className="app">
+      <div className="overlay"></div>
+      
       <div className="page-title">
         <h1 className="me-weather">Me-Weather</h1>
       </div>
